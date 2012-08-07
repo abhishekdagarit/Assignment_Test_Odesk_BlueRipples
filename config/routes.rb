@@ -1,4 +1,6 @@
 Company::Application.routes.draw do
+  resources :divisions
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

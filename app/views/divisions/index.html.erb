@@ -1,0 +1,41 @@
+<h1>Listing divisions</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Address</th>
+    <th>Phonenumber</th>
+    <th>Alternatephonenumber</th>
+    <th>Pricingcategory</th>
+    <th>Onlinebranch</th>
+    <th>Active</th>
+    <th>Operationstartedon</th>
+    <th>Comments</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @divisions.each do |division| %>
+  <tr>
+    <td><%= division.name %></td>
+    <td><%= division.description %></td>
+    <td><%= division.address %></td>
+    <td><%= division.phonenumber %></td>
+    <td><%= division.alternatephonenumber %></td>
+    <td><%= division.pricingcategory %></td>
+    <td><%= division.onlinebranch %></td>
+    <td><%= division.active %></td>
+    <td><%= division.operationstartedon %></td>
+    <td><%= division.comments %></td>
+    <td><%= link_to 'Show', division %></td>
+    <td><%= link_to 'Edit', edit_division_path(division) %></td>
+    <td><%= link_to 'Destroy', division, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Division', new_division_path %>

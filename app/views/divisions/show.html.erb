@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @division.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @division.description %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @division.address %>
+</p>
+
+<p>
+  <b>Phonenumber:</b>
+  <%= @division.phonenumber %>
+</p>
+
+<p>
+  <b>Alternatephonenumber:</b>
+  <%= @division.alternatephonenumber %>
+</p>
+
+<p>
+  <b>Pricingcategory:</b>
+  <%= @division.pricingcategory %>
+</p>
+
+<p>
+  <b>Onlinebranch:</b>
+  <%= @division.onlinebranch %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @division.active %>
+</p>
+
+<p>
+  <b>Operationstartedon:</b>
+  <%= @division.operationstartedon %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @division.comments %>
+</p>
+
+
+<%= link_to 'Edit', edit_division_path(@division) %> |
+<%= link_to 'Back', divisions_path %>

@@ -1,6 +1,6 @@
 Company::Application.routes.draw do
   resources :divisions
-  root :to => 'divisions#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,4 +1,4 @@
-<%= form_for(@division) do |f| %>
+<%= simple_form_for(@division) do |f| %>
   <% if @division.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@division.errors.count, "error") %> prohibited this division from being saved:</h2>
@@ -12,20 +12,16 @@
   <% end %>
 
 
-		<div class="header_bg">
-			<h2> Add a new branch </h2>
-		</div>
-
 		<form id="f1 box">
 			<div class="block">
 				<div id="innerblock_left">
 					<%= f.label :Name, :class =>"label_name" %>
 					<span class="style2" type="text" name="n2">
-				    		<%= f.text_field :name, :class => "style2" %>
+				    		<%= f.text_field :name, :class => "style2", :placeholder => 'Name of branch' %>
 					</span>
 				</div>
 				<div id="innerblock_right">
-    					<%= f.label :Phone_Number, :class =>"label_name" %>
+    					<%= f.label :Phone_Number, :class =>"label_name", :label => "Phone Number" %>
 					<span class="style2">
     						<%= f.text_field :phonenumber, :class => "style2" %>
 					</span>
@@ -34,17 +30,15 @@
 			<div class="block">
 					<div id="innerblock_left">
 						<div>
-    							<%= f.label :Alternate_Phone, :class =>"label_name"  %>
+    							<%= f.label :Alternate_Phone, :class =>"label_name", :label => "Alternamte Phone"   %>
 							<span class="style2">
-    								<%= f.text_field :alternatephonenumber, :class => "style2" %>
+    								<%= f.text_field :alternatephonenumber, :class => "style2", :placeholder => ''  %>
 							</span>
 						</div>
 						<div id="innerblock_left_sub" >
-   	 						<%= f.label :Pricing_Category, :class =>"label_name"  %>
-							<span class="style2" >
-								<select class="style2 style4" name="price">
-										<option value="Head Office Management">Head office management</option>
-										<option value="Branch Office Management" selected="selected">Branch Office Management</option>
+
+
+<%= f.input :pricingcategory, :class =>"label_name", :label => "Pricing Category" , :collection => [["Head Office Management"], ["Branch Office Management"]] %> 
 										
 								</select>
 							</span>
@@ -59,13 +53,13 @@
 			</div>
 			<div class="block">
 				<div id="innerblock_left">
-    					<%= f.label :Online_Branch, :class =>"label_name"  %>
+    					<%= f.label :Online_Branch, :class =>"label_name", :label => "Online Branch"   %>
 					<span class="style2" >
     						<%= f.check_box :onlinebranch, :class => "style5" %>
 					</span>
 				</div>
 				<div id="innerblock_right">
-    					<%= f.label :Operation_Started_On, :class =>"label_name"  %>
+    					<%= f.label :Operation_Started_On, :class =>"label_name" , :label => "Operation Started On"  %>
 					<span class="style2">
     						<%= f.date_select :operationstartedon, :class => "style2" %>
 					</span>

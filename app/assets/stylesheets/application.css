@@ -340,14 +340,14 @@ margin-top:32px;
 /*Updations from Remya*/
 
 
-.content
+.index_box
 {
-margin:0;
+margin-top:10px;
 }
-.user_radio li
+.user_radio
 {
 list-style:none;
-
+padding: 13px 13px;
 }
 .user_id li
 {

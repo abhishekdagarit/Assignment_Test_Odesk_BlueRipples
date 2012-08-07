@@ -340,14 +340,14 @@ margin-top:32px;
 /*Updations from Remya*/
 
 
-.content
+.index_box
 {
-margin:0;
+margin:10px;
 }
-.user_radio li
+.user_radio
 {
 list-style:none;
-
+padding: 13px 13px;
 }
 .user_id li
 {
@@ -460,7 +460,10 @@ font-weight:bold;
 {
 background-color:#c3c3c3;
 text-align:center;
-font-weight:bold
+font-weight:bold;
+height:39px;
+padding-left:10px;
+padding-top:12px;
 }
 
 .bg_grey

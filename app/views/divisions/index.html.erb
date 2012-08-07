@@ -14,8 +14,9 @@
 		<div class="branch_text"> <a href="default.asp">Advanced Search</a></div>
 
 
-<table>
+<table class="index_box">
   <tr>
+    <th class="maintitle user_radio bg_listholder"></th>
     <th class="maintitle bg_listholder">ID</th>
     <th class="maintitle bg_listholder">Name</th>
     <th class="maintitle bg_listholder">Address</th>
@@ -25,6 +26,7 @@
 
 <% @divisions.each do |division| %>
   <tr class="<%= cycle('title', 'bg_grey') %> ">
+    <td class="user_radio"><input type="radio"></td>
     <td class="branch_id" id="bg_listholder"><%= division.id %></td>
     <td class="branch_name" id="bg_listholder"><%= division.name %></td>
     <td class="branch_address" id="bg_listholder"><%= division.address %></td>
@@ -37,7 +39,3 @@
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Division', new_division_path %>

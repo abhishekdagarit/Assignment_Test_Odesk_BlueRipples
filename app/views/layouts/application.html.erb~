@@ -21,7 +21,7 @@
 			</span>
 			</div>
 			<div class="date">
-			<%= Time.now %>				
+			<%= Time.now %>			
 			</div>
 			<ul class="menu">
 			
@@ -42,7 +42,50 @@
 	
 	
 	
+		<div class="header_bg">
+			<h2> Branch List </h2>
+			
+		</div>
+		<div class="branch_button">
 		
+		<img src="../images/search.png" width="153" height="35" border="none"/>
+	   <a href="add_branch.html">
+		<img src="../images/addbutton.png" width="128" height="40" border="none"/></a>
+		<a href="Edit_branch_details.html">
+		<img src="../images/editbutton.png" width="128" height="39" border="none"/>
+		</a></div>
+		<div class="branch_text"> <a href="default.asp">Advanced Search</a></div>
+
+		
+			<div class="content" id="bg_listholder">
+		<ul class="user_radio">
+			<li class="title"></li>
+		</ul>
+		
+		<ul class="user_id">
+		<li class="title">ID</li>
+		</ul>
+
+		<ul class="branch_name">
+		<li class="title">Branch Name</li>
+		</ul>
+		
+		<ul class="branch_address">
+		<li class="title">Branch Address</li>
+		</ul>
+		
+		<ul class="branch_number">
+		<li class="title">Phone Number</li>
+		</ul>
+		
+
+		<ul class="user_status">
+		<li class="title"> Status</li>
+		</ul>
+		
+		
+		</div>
+
 <div class="boxs">
 <%= yield %>
 </div>

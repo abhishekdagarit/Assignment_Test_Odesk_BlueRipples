@@ -641,8 +641,3 @@ margin-left:750px;
 margin-left:48px; 
 vertical-align: top;	
 }
-
-
-.menu li{
-padding:23px 6px;
-}

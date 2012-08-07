@@ -13,7 +13,7 @@
 	<div class="header">
 	
 		<div class="logo">
-			<a href="head_control_panel.html"><img src="../images/logo.png"  width="305" height="126" border="none"/></a>   
+			<a href="head_control_panel.html"><img src="/images/logo.png"  width="305" height="126" border="none"/></a>   
 		</div>
 		<div class="menu_holder">
 			

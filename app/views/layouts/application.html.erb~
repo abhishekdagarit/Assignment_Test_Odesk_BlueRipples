@@ -17,11 +17,11 @@
 		</div>
 		<div class="menu_holder">
 			
-			<div class="logged_user"> Welcome Admin <span><a href="default.asp"><img src="../images/logout.png" width="24" height="23" border="none"/><b> Logout</b></a>  
+			<div class="logged_user"> Welcome Admin <span><a href="default.asp"><img src="images/logout.png" width="24" height="23" border="none"/><b> Logout</b></a>  
 			</span>
 			</div>
 			<div class="date">
-			<%= Time.now %>			
+			<%= Time.now %>				
 			</div>
 			<ul class="menu">
 			
@@ -39,61 +39,13 @@
 		
 	</div>
 	<div class="box">
-	
-	
-	
-		<div class="header_bg">
-			<h2> Branch List </h2>
-			
-		</div>
-		<div class="branch_button">
-		
-		<img src="../images/search.png" width="153" height="35" border="none"/>
-	   <a href="add_branch.html">
-		<img src="../images/addbutton.png" width="128" height="40" border="none"/></a>
-		<a href="Edit_branch_details.html">
-		<img src="../images/editbutton.png" width="128" height="39" border="none"/>
-		</a></div>
-		<div class="branch_text"> <a href="default.asp">Advanced Search</a></div>
-
-		
-			<div class="content" id="bg_listholder">
-		<ul class="user_radio">
-			<li class="title"></li>
-		</ul>
-		
-		<ul class="user_id">
-		<li class="title">ID</li>
-		</ul>
-
-		<ul class="branch_name">
-		<li class="title">Branch Name</li>
-		</ul>
-		
-		<ul class="branch_address">
-		<li class="title">Branch Address</li>
-		</ul>
-		
-		<ul class="branch_number">
-		<li class="title">Phone Number</li>
-		</ul>
-		
-
-		<ul class="user_status">
-		<li class="title"> Status</li>
-		</ul>
-		
-		
-		</div>
-
-<div class="boxs">
-<%= yield %>
-</div>
+	<%= yield %>
 	</div> 
+</div>
 <div class="footer">
 	Copyright &copy; 2012 <b>CDMS</b>. All rights reserved.
 </div>	
 	
-</div>
+
 </body>
 </html>

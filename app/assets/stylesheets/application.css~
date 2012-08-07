@@ -372,6 +372,10 @@ vertical-align:top;
 {
 text-align:center;
 }
+.active_status
+{
+
+}
 #bg_listholder ul
 {
 display:inline-block;
@@ -453,24 +457,41 @@ font-weight:bold;
 background-color:#e0e0e0;
 }
 
+.bg_grey
+{
+background-color:#e0e0e0;
+}
+
 /*Branch List*/
+
+.branch_id
+{
+width:86px!important;
+list-style:none;
+text-align:center;
+float:left;
+}
+
 .branch_name
 {
 width:175px!important;
 list-style:none;
 text-align:center;
+float:left;
 }
 .branch_address
 {
 width:267px!important;
 list-style:none;
 text-align:center;
+float:left;
 }
 .branch_number
 {
 width:182px!important;
 list-style:none;
 text-align:center;
+float:left;
 }
 .branch_text
 {
@@ -641,3 +662,10 @@ margin-left:750px;
 margin-left:48px; 
 vertical-align: top;	
 }
+
+
+.menu li{
+padding:23px 6px;
+}
+
+

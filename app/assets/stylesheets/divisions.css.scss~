@@ -1,10 +1,8 @@
-/*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
- *= require_self
- *= require_tree . 
-*/
+// Place all the styles related to the divisions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
 
 html{
 height:100%;  
@@ -372,11 +370,6 @@ vertical-align:top;
 {
 text-align:center;
 }
-.active_status
-{
-list-style:none;
-text-align:center;
-}
 #bg_listholder ul
 {
 display:inline-block;
@@ -458,41 +451,24 @@ font-weight:bold;
 background-color:#e0e0e0;
 }
 
-.bg_grey
-{
-background-color:#e0e0e0;
-}
-
 /*Branch List*/
-
-.branch_id
-{
-width:86px!important;
-list-style:none;
-text-align:center;
-float:left;
-}
-
 .branch_name
 {
 width:175px!important;
 list-style:none;
 text-align:center;
-float:left;
 }
 .branch_address
 {
 width:267px!important;
 list-style:none;
 text-align:center;
-float:left;
 }
 .branch_number
 {
 width:182px!important;
 list-style:none;
 text-align:center;
-float:left;
 }
 .branch_text
 {
@@ -668,5 +644,4 @@ vertical-align: top;
 .menu li{
 padding:23px 6px;
 }
-
 

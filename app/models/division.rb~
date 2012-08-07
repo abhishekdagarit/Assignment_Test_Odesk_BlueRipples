@@ -1,5 +1,5 @@
 class Division < ActiveRecord::Base
-	validates :name, :address, :phonenumber, :presence => true
+	validates :name, :address, :phonenumber, :pricingcategory, :presence => true
 	validates :phonenumber, :numericality => true
 	if :alternatephonenumber
 	validates_numericality_of :alternatephonenumber

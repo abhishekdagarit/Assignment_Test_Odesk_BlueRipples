@@ -12,6 +12,10 @@
   <% end %>
 
 
+		<div class="header_bg">
+			<h2> Add a new branch </h2>
+		</div>
+
 		<form id="f1 box">
 			<div class="block">
 				<div id="innerblock_left">

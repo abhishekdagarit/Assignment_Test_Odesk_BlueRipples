@@ -2,6 +2,6 @@
 	<h2> Add a new branch </h2>
 </div>
 <%= render 'form' %>
-<!--
+/*
 <%= link_to 'Back', divisions_path %>
--->
+*/

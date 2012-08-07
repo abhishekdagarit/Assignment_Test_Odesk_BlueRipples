@@ -377,16 +377,17 @@ text-align:center;
 list-style:none;
 text-align:center;
 }
-#bg_listholder ul
+.bg_listholder ul
 {
 display:inline-block;
 vertical-align:top;
 padding:0px;
 
 }
-#bg_listholder ul li
+#bg_listholder
 {
 height:39px;
+text-align:center;
 padding-left:10px;
 padding-top:12px;
 
@@ -451,11 +452,15 @@ margin-top:-8px;
 .content .title
 {
 background-color:#c3c3c3;
+text-align:center;
 font-weight:bold;
 }
-.content .bg_grey
+
+.maintitle
 {
-background-color:#e0e0e0;
+background-color:#c3c3c3;
+text-align:center;
+font-weight:bold
 }
 
 .bg_grey
@@ -478,21 +483,21 @@ text-align:center;
 width:175px!important;
 list-style:none;
 text-align:center;
-float:left;
+
 }
 .branch_address
 {
 width:267px!important;
 list-style:none;
 text-align:center;
-float:left;
+
 }
 .branch_number
 {
 width:182px!important;
 list-style:none;
 text-align:center;
-float:left;
+
 }
 .branch_text
 {
@@ -575,7 +580,7 @@ color:#017f7e;
 font-size:20px;
 border: 1px solid #9c9d9e;
 text-align: center;
-float:left;
+
 }
 .emp_tab img
 {

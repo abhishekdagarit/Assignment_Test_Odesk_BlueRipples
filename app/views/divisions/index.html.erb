@@ -14,56 +14,30 @@
 		<div class="branch_text"> <a href="default.asp">Advanced Search</a></div>
 
 
-				<div class="content" id="bg_listholder">
-			<ul class="user_radio">
-				<li class="title"></li>
-			</ul>
-			<ul class="user_id branch_id">
-			<li class="title">ID</li>
+<table>
+  <tr>
+    <th class="maintitle bg_listholder">ID</th>
+    <th class="maintitle bg_listholder">Name</th>
+    <th class="maintitle bg_listholder">Address</th>
+    <th class="maintitle bg_listholder">Phone Number</th>
+    <th class="maintitle bg_listholder">Status</th>
+  </tr>
 
-			</ul>
-			<ul class="branch_name">
-			<li class="title">Branch Name</li>
-
-			</ul>
-			<ul class="branch_address">
-			<li class="title">Branch Address</li>
-
-			</ul>
-			<ul class="branch_number">
-			<li class="title">Phone Number</li>
-
-			</ul>
-			<ul class="user_status">
-			<li class="title"> Status</li>
-
-			</ul>
-	
-			</div>
-
-		<% @divisions.each do |division| %>
-
-		<% if division.id % 2 == 0 %>
-				
-				<li class="branch_id"><%= division.id %>
-				<li class="font_colorb branch_name"><%= division.name %></li>
-				<li class="branch_address"><%= division.address %></li>
-				<li class="branch_number"><%= division.phonenumber %></li>
-			<% if division.active == false %>
-				<li class="active_status"><img src="../images/tick.png" width="31" height="34"/></li>
+<% @divisions.each do |division| %>
+  <tr class="<%= cycle('title', 'bg_grey') %> ">
+    <td class="branch_id" id="bg_listholder"><%= division.id %></td>
+    <td class="branch_name" id="bg_listholder"><%= division.name %></td>
+    <td class="branch_address" id="bg_listholder"><%= division.address %></td>
+    <td class="branch_number" id="bg_listholder"><%= division.phonenumber %></td>
+    <% if division.active == false %>
+				<td class="user_status" id="bg_listholder"><img src="../images/tick.png" width="31" height="34"/></li>
 			<% elsif %>
-				<li class="active_status"><img src="../images/untick.png" width="31" height="34"/></li>
-			<% end %>
-		<% elsif %>
-				<li class="branch_id bg_grey"><%= division.id %>
-				<li class="bg_grey font_colorb branch_name"><%= division.name %></li>
-				<li class="branch_address" class="bg_grey"><%= division.address %></li>
-				<li class="branch_number" class="bg_grey"><%= division.phonenumber %></li>
-			<% if division.active == true %>
-				<li class="active_status"><img src="../images/tick.png" width="31" height="34"/></li>
-			<% elsif %>
-				<li class="bg_grey active_status"><img src="../images/untick.png" width="31" height="34"/></li>
-			<% end %>
-		<% end %>
+				<td class="user_status" id="bg_listholder"><img src="../images/untick.png" width="31" height="34"/></li>
+   <% end %>
+  </tr>
+<% end %>
+</table>
 
-		<% end %>
+<br />
+
+<%= link_to 'New Division', new_division_path %>

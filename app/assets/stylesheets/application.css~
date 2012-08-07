@@ -374,7 +374,8 @@ text-align:center;
 }
 .active_status
 {
-
+list-style:none;
+text-align:center;
 }
 #bg_listholder ul
 {
@@ -469,7 +470,7 @@ background-color:#e0e0e0;
 width:86px!important;
 list-style:none;
 text-align:center;
-float:left;
+
 }
 
 .branch_name

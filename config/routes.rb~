@@ -1,6 +1,7 @@
 Company::Application.routes.draw do
   resources :divisions
-  root :to => 'divisions#index'
+  root :to => 'divisions'
+  match "/division/:id/edit", :controller => "division", :action => "edit"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

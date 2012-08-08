@@ -1,4 +1,6 @@
-		<div class="header_bg">
+	
+
+	<div class="header_bg">
 			<h2> Branch List </h2>
 			
 		</div>
@@ -8,8 +10,8 @@
 	   <a href="divisions/new.html">
 		<img src="../images/addbutton.png" width="128" height="40" border="none"/></a>
 		
-		<a href="divisions/edit.html">
-		<img src="../images/editbutton.png" width="128" height="39" border="none"/>
+	   <a href='#'>	
+		<img src="../images/editbutton.png" width="128" height="39" border="none" onClick='alert("Please select a branch to edit")'/>
 		</a></div>
 		<div class="branch_text"> <a href="default.asp">Advanced Search</a></div>
 
@@ -24,9 +26,11 @@
     <th class="maintitle bg_listholder">Status</th>
   </tr>
 
+
 <% @divisions.each do |division| %>
   <tr class="<%= cycle('title', 'bg_grey') %> ">
-    <td class="user_radio"><input type="radio"></td>
+    <td class="user_radio"><%= radio_button_tag("division_ids[]", division.id, false, :onClick => 'location.href="' + edit_division_path(division) + '"'
+)%></td>
     <td class="branch_id" id="bg_listholder"><%= division.id %></td>
     <td class="branch_name" id="bg_listholder"><%= division.name %></td>
     <td class="branch_address" id="bg_listholder"><%= division.address %></td>
@@ -37,5 +41,6 @@
 				<td class="user_status" id="bg_listholder"><img src="../images/untick.png" width="31" height="34"/></li>
    <% end %>
   </tr>
+
 <% end %>
 </table>
